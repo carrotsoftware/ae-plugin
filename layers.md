@@ -1,7 +1,7 @@
 # <b>Работа со слоями</b>
 ## <b>Поддерживаемые типы слоев</b>
 
-> **Carrot Engine** поддерживает следующие типы слоев из **After Effects** при экспорте с помощью **Carrot AE Plugin**:
+**Carrot Engine** поддерживает следующие типы слоев из **After Effects** при экспорте с помощью **Carrot AE Plugin**:
 
 ### **Null Layer**
 
