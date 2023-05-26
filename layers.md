@@ -1,75 +1,68 @@
 # <b>Работа со слоями</b>
 ## <b>Поддерживаемые типы слоев</b>
----
-<b>Carrot Engine</b> поддерживает следующие типы слоев из <b>After Effects</b> при экспорте с помощью <b>Carrot AE Plugin</b>:
 
- - <details>
-   <summary><b>Null Layer</b></summary>
-   <p>Работает аналогично <b>AE</b>, к нему можно парентить другие слои, анимировать и применять эффекты, использовать в эскпрешенах и т.д. <div align="center"><img src="_images/image11.png" alt="AE_Null Layer" title="Null Layer" width="400"></div></p>
-   </details>
+> **Carrot Engine** поддерживает следующие типы слоев из **After Effects** при экспорте с помощью **Carrot AE Plugin**:
 
- - <details>
-   <summary><b>Solid Layer</b></summary>
-   <p>
-   Аналогично <b>АЕ</b>. Отличие только в том, что в <b>Carrot</b> этот тип слоя рисуется в режиме <b>Bicubic sampling</b> 
-   <em>(пример на рис. ниже)</em>
-   <div align="center"><img src="_images/image11.png" alt="AE_Solid Layer" title="Solid Layer_AE" width="400">
-   <img src="_images/image11.png" alt="Carrot_Solid Layer" title="Solid Layer_Carrot" width="400"></div>
-   </p>
-   </details>
+### **Null Layer**
 
- - <details>
-   <summary><b>Shape Layer</b></summary> 
-   Для работы с <b>Shape Layers</b> их необходимо перед экспортом из After Effects в Carrot конвертировать в <b>кривые Безье</b>
-   <p><div align="center"><img src="_images/image11.png" alt="AE_BezierPath" title="Convert to Bezier Path" width="400"></div></p>
+Работает аналогично **AE**, к нему можно парентить другие слои, анимировать и применять эффекты, использовать в эскпрешенах и т.д. 
 
-   Поддерживается <b>Stroke</b> со скругленными краями, с возможностью редактирования толщины обводки (<em>Stroke Width</em>) и применения сплошной заливки (<em>Fill</em>)
-   <p><div align="center"><img src="_images/image11.png" alt="AE_Stroke" title="Stroke" width="400"></div>
-   </p>
+![AE_Null Layer](_images/image11.png "Null Layer")
 
-   Для применения масок на слое <b>Shape</b> необходимо предварительно переместить данный слой в <b>Precomposition</b> или использовать <b>Track Matte</b>
-   <p><div align="center"><img src="_images/image11.png" alt="AE_Masks" title="Masks_AE" width="400">
-   <img src="_images/image11.png" alt="Carrot_Masks" title="Masks_Carrot" width="400"></div>
-   </p>
+### **Solid Layer**
+   Аналогично **АЕ**. Отличие только в том, что в **Carrot** этот тип слоя рисуется в режиме **Bicubic sampling** (*пример на рис. ниже*)
 
-   Векторные слои имеют ограничения по размеру композиции. Это нужно учитывать при построении архитектуры композиции. Для работы в режиме реального времени векторный слой растрируется и его <b>масштабирование более 100% может вызвать появление артефактов</b>. Аналогичным образом слой может обрезаться по границе композиции при масштабировании.
-   <p><div align="center"><img src="_images/image11.png" alt="AE_Scale" title="Scale_AE" width="400">
-   <img src="_images/image11.png" alt="Carrot_Scale" title="Scale_Carrot" width="400"></div>
-   </p>
-   </details>
+   ![AE_Solid Layer](_images/image11.png "Solid Layer_AE")
+   ![AE_Solid Layer](_images/image11.png "Solid Layer_Carrot")
 
- - <details>
-   <summary><b>Text Layer</b></summary>
-   <b>Поддерживаемые параметры текстового слоя:</b>
-   <ul>
-   <li>Поддерживаемый кернинг — <b>Metrics</b></li>
-   <li>Поддерживаются: гарнитура, стиль, толщина, межстрочное и межсимвольное расстояние, капитализация текста, выравнивание.</li>
-   <li>Не импортируются: для <b>point text</b> переносы текста (<em>расставленные в After Effect</em>), посимвольные эффекты (<em>Text Animator</em>).</li>
-   <li>При работе с текстовыми блоками необходимо учитывать что для отображений всего текстового блока в <b>Carrot</b> используется стиль первого символа этого блока</li>
-   </ul>
+### **Shape Layer**
+   Для работы с **Shape Layers** их необходимо перед экспортом из After Effects в Carrot конвертировать в **кривые Безье**
 
-   <p><div align="center"><img src="_images/image11.png" alt="AE_Text Layer" title="Text Layer_AE" width="400">
-   <img src="_images/image11.png" alt="Carrot_Text Layer" title="Text Layer_Carrot" width="400"></div>
-   </p>
- 
- - <details>
+   ![AE_BezierPath](_images/image11.png "Convert to Bezier Path")
 
-   <summary><b>Media Layer</b></summary>
-   Для циклического воспроизведения видео в <b>Carrot</b> нужно указать <b>Loop Times больше 1</b>
-   <p><div align="center"><img src="_images/image11.png" alt="AE_InterpretFootage" title="Interpret Footage" width="400"></div></p>
-   <p><div align="center"><img src="_images/image11.png" alt="AE_Loop Times" title="Loop Times" width="400"></div></p>
-   Важно учитывать <b>Frame Rate</b> шаблона и тракта (<em>настроенного в Carrot Flow Chart</em>), проигрывание всей медиа будет происходить с этим <b>FPS</b> (<em>ускорение или замедление при несоответствии Frame Rate</em>)
-   <p><div align="center"><img src="_images/image11.png" alt="AE_FrameRate" title="Frame Rate" width="400"></div></p>
+   Поддерживается **Stroke** со скругленными краями, с возможностью редактирования толщины обводки (*Stroke Width*) и применения сплошной заливки (*Fill*)
 
-   </details>
+   ![AE_Stroke](_images/image11.png "Stroke")
 
-> ### **3D слои**
-> <b>Carrot Engine</b> считывает систему измерений из <b>After Effects</b> в <b>миллиметрах</b>, 
-> #### *1000px в After Effects = 1000mm в Carrot Engine*
-<p><div align="center">
-<img src="_images/image11.png" alt="AE_FrameRate" title="Frame Rate" width="300">
-<img src="_images/image11.png" alt="AE_FrameRate" title="Frame Rate" width="300">
-<img src="_images/image11.png" alt="AE_FrameRate" title="Frame Rate" width="300"></div></p>
+   Для применения масок на слое **Shape** необходимо предварительно переместить данный слой в **Precomposition** или использовать **Track Matte**
+   
+   ![AE_Masks](_images/image11.png "Masks_AE")
+   ![Carrot_Masks](_images/image11.png "Masks_Carrot")   
+
+   Векторные слои имеют ограничения по размеру композиции. Это нужно учитывать при построении архитектуры композиции. Для работы в режиме реального времени векторный слой растрируется и его **масштабирование более 100% может вызвать появление артефактов**. Аналогичным образом слой может обрезаться по границе композиции при масштабировании.
+
+   ![AE_Scale](_images/image11.png "AE_Scale")
+   ![Carrot_Scale](_images/image11.png "Carrot_Scale")  
+
+### **Text Layer**
+   **Поддерживаемые параметры текстового слоя:**
+   - Поддерживаемый кернинг — **Metrics**
+   - Поддерживаются: гарнитура, стиль, толщина, межстрочное и межсимвольное расстояние, капитализация текста, выравнивание.
+   - Не импортируются: для **point text** переносы текста (*расставленные в After Effect*), посимвольные эффекты (*Text Animator*).
+   - При работе с текстовыми блоками необходимо учитывать что для отображений всего текстового блока в *Carrot* используется стиль первого символа этого блока
+
+   ![AE_Text Layer](_images/image11.png "Text Layer_AE")
+   ![Carrot_Text Layer](_images/image11.png "Text Layer_Carrot")
+
+### **Media Layer**
+   Для циклического воспроизведения видео в **Carrot** нужно указать **Loop Times больше 1**
+
+   ![AE_InterpretFootage](_images/image11.png "Interpret Footage")
+   ![AE_Loop Times](_images/image11.png "Loop Times")
+   
+   Важно учитывать **Frame Rate** шаблона и тракта (*настроенного в Carrot Flow Chart*), проигрывание всей медиа будет происходить с этим **FPS** (*ускорение или замедление при несоответствии Frame Rate*)
+
+   ![AE_FrameRate](_images/image11.png "Frame Rate")
+
+### **3D слои**
+
+**Carrot Engine** считывает систему измерений из **After Effects** в **миллиметрах**, 
+
+*1000px в After Effects = 1000mm в Carrot Engine*
+
+![AE_Distance](_images/image11.png "Distance")
+![AE_Distance](_images/image11.png "Distance")
+![AE_Distance](_images/image11.png "Distance")
 
 [Вернуться на прошлую страницу](user-guide.md)
 
