@@ -1,5 +1,5 @@
-# <b>Работа со слоями</b>
-## <b>Поддерживаемые типы слоев</b>
+# **Работа со слоями**
+## **Поддерживаемые типы слоев**
 
 **Carrot Engine** поддерживает следующие типы слоев из **After Effects** при экспорте с помощью **Carrot AE Plugin**:
 
@@ -9,11 +9,15 @@
 
 ![AE_Null Layer](_images/image11.png "Null Layer")
 
+---
+
 ### **Solid Layer**
    Аналогично **АЕ**. Отличие только в том, что в **Carrot** этот тип слоя рисуется в режиме **Bicubic sampling** (*пример на рис. ниже*)
 
    ![AE_Solid Layer](_images/image11.png "Solid Layer_AE")
    ![AE_Solid Layer](_images/image11.png "Solid Layer_Carrot")
+
+---
 
 ### **Shape Layer**
    Для работы с **Shape Layers** их необходимо перед экспортом из After Effects в Carrot конвертировать в **кривые Безье**
@@ -34,6 +38,8 @@
    ![AE_Scale](_images/image11.png "AE_Scale")
    ![Carrot_Scale](_images/image11.png "Carrot_Scale")  
 
+---
+
 ### **Text Layer**
    **Поддерживаемые параметры текстового слоя:**
    - Поддерживаемый кернинг — **Metrics**
@@ -43,6 +49,8 @@
 
    ![AE_Text Layer](_images/image11.png "Text Layer_AE")
    ![Carrot_Text Layer](_images/image11.png "Text Layer_Carrot")
+
+---
 
 ### **Media Layer**
    Для циклического воспроизведения видео в **Carrot** нужно указать **Loop Times больше 1**
@@ -54,6 +62,8 @@
 
    ![AE_FrameRate](_images/image11.png "Frame Rate")
 
+---
+
 ### **3D слои**
 
 **Carrot Engine** считывает систему измерений из **After Effects** в **миллиметрах**, 
@@ -64,5 +74,8 @@
 ![AE_Distance](_images/image11.png "Distance")
 ![AE_Distance](_images/image11.png "Distance")
 
+---
+
+## **Эффекты наложения слоев и Track Matte**
 [Вернуться на прошлую страницу](user-guide.md)
 
