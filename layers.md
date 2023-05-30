@@ -15,24 +15,22 @@
 ### Solid Layer
    Аналогично **АЕ**. Отличие только в том, что в **Carrot** этот тип слоя рисуется в режиме **Bicubic sampling** (*пример на рис. ниже*)
 
-   ![AE_Solid Layer](_images/image11.png "Solid Layer_AE")
-   ![AE_Solid Layer](_images/image11.png "Solid Layer_Carrot")
+   ![AE_CARROT_Solid Layer](_images/image12.png "AE_CARROT_Solid Layer")
 
 ---
 
 ### Shape Layer
    Для работы с **Shape Layers** их необходимо перед экспортом из After Effects в Carrot конвертировать в **кривые Безье**
 
-   ![AE_BezierPath](_images/image11.png "Convert to Bezier Path")
+   ![AE_BezierPath](_images/image13.png "Convert to Bezier Path")
 
    Поддерживается **Stroke** со скругленными краями, с возможностью редактирования толщины обводки (*Stroke Width*) и применения сплошной заливки (*Fill*)
 
-   ![AE_Stroke](_images/image11.png "Stroke")
+   ![AE_Stroke](_images/image14.png "Stroke")
 
    Для применения масок на слое **Shape** необходимо предварительно переместить данный слой в **Precomposition** или использовать **Track Matte**
    
-   ![AE_Masks](_images/image11.png "Masks_AE")
-   ![Carrot_Masks](_images/image11.png "Masks_Carrot")   
+   ![AE_Masks](_images/image15.png "Masks_AE") 
 
    Векторные слои имеют ограничения по размеру композиции. Это нужно учитывать при построении архитектуры композиции. Для работы в режиме реального времени векторный слой растрируется и его **масштабирование более 100% может вызвать появление артефактов**. Аналогичным образом слой может обрезаться по границе композиции при масштабировании.
 
