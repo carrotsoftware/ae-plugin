@@ -1,4 +1,8 @@
 ﻿- [Работа со слоями](layers.md)
+- -  [Поддерживаемые типы слоев](supported_layers.md)
+- -  [Эффекты наложения слоев и Track Matte](overlay_effects.md)
+- -  [Работа с масками слоев](layer_masks.md)
+- -  [Анимация слоев](layer_animation.md)
 - [Работа с эффектами](effects.md)
 - [Работа с текстовыми блоками](texts.md)
 - [Работа с медиа](media.md)
