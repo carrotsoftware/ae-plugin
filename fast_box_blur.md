@@ -1,4 +1,4 @@
-## Fast Box Blur особенности и ограничения
+# Fast Box Blur особенности и ограничения
 
 Доступный для изменения параметр **Fast Box Blur** в **Carrot** — **Blur** **Radius**, остальные параметры эффекта фиксированные:
 - Repeat Edge Pixels – On,
