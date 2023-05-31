@@ -55,7 +55,7 @@
 
 *Пример использования:* создания стоп-кадра в Carrot из проходного сигнала в момент запуска шаблона.*
 
-![AE_Posterize Time](_images/image11.png "Posterize Time")
+![AE_Posterize Time](_images/image21.png "Posterize Time")
 
 ---
 

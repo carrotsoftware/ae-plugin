@@ -25,7 +25,7 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 Для выражений используется логика и синтаксис аналогично JavaScript Expression Engine, которая отличается от ExtendScript, который может быть выставлен по умолчанию.
 
-![AE_ExtendScript](_images/image11.png "ExtendScript")
+![AE_ExtendScript](_images/image51.png "ExtendScript")
 
 Подробнее по [ссылке.](https://helpx.adobe.com/au/after-effects/using/legacy-and-extend-script-engine.html)
 
