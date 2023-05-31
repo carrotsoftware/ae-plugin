@@ -8,7 +8,7 @@
 
 Работает аналогично **AE**, к нему можно парентить другие слои, анимировать и применять эффекты, использовать в эскпрешенах и т.д. 
 
-![AE_Null Layer](_images/image11.png "Null Layer")
+![AE_Null Layer](_images/image101.png "Null Layer")
 
 ---
 
@@ -30,12 +30,11 @@
 
    Для применения масок на слое **Shape** необходимо предварительно переместить данный слой в **Precomposition** или использовать **Track Matte**
    
-   ![AE_Masks](_images/image15.png "Masks_AE") 
+   ![AE_Carrot_Masks](_images/image15.png "AE_Carrot_Masks") 
 
    Векторные слои имеют ограничения по размеру композиции. Это нужно учитывать при построении архитектуры композиции. Для работы в режиме реального времени векторный слой растрируется и его **масштабирование более 100% может вызвать появление артефактов**. Аналогичным образом слой может обрезаться по границе композиции при масштабировании.
 
-   ![AE_Scale](_images/image11.png "AE_Scale")
-   ![Carrot_Scale](_images/image11.png "Carrot_Scale")  
+   ![AE_Carrot_Scale](_images/image16.png "AE_Carrot_Scale")
 
 ---
 
@@ -46,20 +45,19 @@
    - Не импортируются: для **point text** переносы текста (*расставленные в After Effect*), посимвольные эффекты (*Text Animator*).
    - При работе с текстовыми блоками необходимо учитывать что для отображений всего текстового блока в *Carrot* используется стиль первого символа этого блока
 
-   ![AE_Text Layer](_images/image11.png "Text Layer_AE")
-   ![Carrot_Text Layer](_images/image11.png "Text Layer_Carrot")
+   ![AE_Carrot_Text Layer](_images/image17.png "AE_Carrot_Text Layer")
 
 ---
 
 ### Media Layer
    Для циклического воспроизведения видео в **Carrot** нужно указать **Loop Times больше 1**
 
-   ![AE_InterpretFootage](_images/image11.png "Interpret Footage")
-   ![AE_Loop Times](_images/image11.png "Loop Times")
+   ![AE_InterpretFootage](_images/image18.png "Interpret Footage")
+   ![AE_Loop Times](_images/image19.png "Loop Times")
    
    Важно учитывать **Frame Rate** шаблона и тракта (*настроенного в Carrot Flow Chart*), проигрывание всей медиа будет происходить с этим **FPS** (*ускорение или замедление при несоответствии Frame Rate*)
 
-   ![AE_FrameRate](_images/image11.png "Frame Rate")
+   ![AE_FrameRate](_images/image110.png "Frame Rate")
 
 ---
 
@@ -69,9 +67,10 @@
 
 *1000px в After Effects = 1000mm в Carrot Engine*
 
-![AE_Distance](_images/image11.png "Distance")
-![AE_Distance](_images/image11.png "Distance")
-![AE_Distance](_images/image11.png "Distance")
+![AE_Distance](_images/image111.png "Distance")
+![AE_Distance](_images/image112.png "Distance")
+![AE_Distance](_images/image113.png "Distance")
+![AE_Distance](_images/image114.png "Distance")
 
 ---
 ---
@@ -116,13 +115,11 @@
 Ограничения при работе с Масками Слоёв:
 
 - При булевых операция с масками, тип Intersect не должен идти первым. В этом случае, первую маску в режиме Intersect следует поменять на Add.
-![AE_Intersect](_images/image11.png "Intersect")
-![Carrot_Intersect](_images/image11.png "Intersect")
+![AE_Carrot_Intersect](_images/image115.png "Intersect")
 - Мask Feather использует исключительно билинейную интерполяцию (важно учитывать при масках с острыми углами и высоким значением Feather).
 - Отрицательное значение свойства Мask Expansion использует проприетарный алгоритм отличный от After Effects, результат необходимо контролировать в Template Preview.
 - Тип маски None в Carrot делает весь слой невидимым.
-![AE_None](_images/image11.png "None")
-![Carrot_None](_images/image11.png "None")
+![AE_Carrot_None](_images/image116.png "Mask - None")
 
 ---
 ---
@@ -131,7 +128,7 @@
 
 Необходимо ставить ключи анимации на всех вложенных композициях, иначе содержимое не будет обновляться при воспроизведении в Carrot. Более подробно о подготовке ключей анимации при экспорте шаблонов в Сarrot [читайте в п. 7.1.](export.md)
 
-![AE_Keys](_images/image11.png "Keys")
+![AE_Keys](_images/image117.png "Keys")
 
 ---
 
