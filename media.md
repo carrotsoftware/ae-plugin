@@ -10,7 +10,7 @@
 - Медиа в **H264**, **HVENC**, **Prores** должны иметь захлесты без содержимого в начале и конце видео на **5-10 кадров**. В противном случае, при последующих проигрываниях шаблона заново, могут появляться старые кадры видео.
 - Медиа в высоком разрешении рекомендуется использовать в кодеке **HVENC**, чтобы обрабатываться видеокартой и иметь высокую производительность, либо **png секвенцией**.
 
-![AE_Overlap](_images/image41.png "Overlap")
+![AE_Overlap](_images/image401.jpg "Overlap")
 
 ---
 
@@ -22,9 +22,9 @@
 
 Используя в дальнейшем слой с плейсхолдером как переменную, содержимое будет заменяться на всех слоях, использующих эту **PNG**.
 
-![Placeholder](_images/image42.png "Placeholder 1")
-![Placeholder](_images/image43.png "Placeholder 2")
-![Placeholder](_images/image44.png "Placeholder 3")
+![Placeholder](_images/image402.jpg "Placeholder 1")
+![Placeholder](_images/image403.gif "Placeholder 2")
+![Placeholder](_images/image404.jpg "Placeholder 3")
 
 ---
 

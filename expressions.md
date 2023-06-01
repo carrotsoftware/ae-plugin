@@ -4,16 +4,65 @@
 
 В рамках работы с выражениями через Expressions и Carrot Scripts поддерживаются следующие методы:
 
-| Global             | Other Math                | Comp             | Footage             | Property | Layer Sub-objects  | Layer General   | Layer Properties | Layer 3D          |
-|:-------------------|:--------------------------|:-----------------|:--------------------|:---------|:-------------------|:----------------|:-----------------|:------------------|
-| comp      (name)   | degreesToRadians(degrees) | Comp.layer(index)| Footage.width       | value    | Layer.effect(name) | Layer.width     | Layer.anchorPoint| Layer.orientation |
-| footage   (name)   | radiansToDegrees(radians) | Comp.layer(name) | Footage.height      |          | Layer.effect(index)| Layer.height    | Layer.position   | Layer.rotationX   |
-| thisProject        |                           | Comp.width       | Footage.duration    |          |                    | Layer.index     | Layer.scale      | Layer.rotationY   |
-| thisComp           |                           | Comp.height      | Footage.pixelAspect |          |                    | Layer.parent    | Layer.rotation   | Layer.rotationZ   |
-| thisLayer          |                           | Comp.duration    | Footage.name        |          |                    | Layer.hasParent | Layer.opacity    |                   |
-| thisProperty       |                           | Comp.name        |                     |          |                    | Layer.inPoint   | Layer.name       |                   |
-| time               |                           |                  |                     |          |                    | Layer.outPoint  |                  |                   |
-| value              |                           |                  |                     |          |                    | Layer.startTime |                  |                   |
+>Global:
+- comp(name)
+- footage(name)
+- thisProject
+- thisComp
+- thisLayer
+- thisProperty
+- time
+- value
+
+>Other Math:
+- degreesToRadians(degrees)
+- radiansToDegrees(radians)
+
+>Comp:
+- Comp.layer(index)
+- Comp.layer(name)
+- Comp.width
+- Comp.height
+- Comp.duration
+- Comp.name
+
+>Footage:
+- Footage.width
+- Footage.height
+- Footage.duration
+- Footage.pixelAspect
+- Footage.name
+
+>Property:
+- value
+
+>Layer Sub-objects:
+- Layer.effect(name)
+- Layer.effect(index)
+
+>Layer General:
+- Layer.width
+- Layer.height
+- Layer.index
+- Layer.parent
+- Layer.hasParent
+- Layer.inPoint
+- Layer.outPoint
+- Layer.startTime
+
+>Layer Properties:
+- Layer.anchorPoint
+- Layer.position
+- Layer.scale
+- Layer.rotation
+- Layer.opacity
+- Layer.name
+
+>Layer 3D:
+- Layer.orientation
+- Layer.rotationX
+- Layer.rotationY
+- Layer.rotationZ
 
 ---
 
