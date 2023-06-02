@@ -5,6 +5,7 @@
 В рамках работы с выражениями через Expressions и Carrot Scripts поддерживаются следующие методы:
 
 `Global:`
+```
 - comp(name)
 - footage(name)
 - thisProject
@@ -13,6 +14,7 @@
 - thisProperty
 - time
 - value
+```
 
 `Other Math:`
 - degreesToRadians(degrees)
