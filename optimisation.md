@@ -4,19 +4,19 @@
 
 Для сохранения производительности рекомендуется использовать PNG, как альтернативу Solid с круглыми масками и эффектом градиента.
 
-![AE_Optimized/Not optimized](_images/image61.png "Optimized/Not optimized")
+![AE_Optimized/Not optimized](_images/image601.jpg "Optimized/Not optimized")
 
 ---
 
 Используем вместо нескольких видео - 1 видеоатлас.
 
-![AE_Video Atlas](_images/image62.png "Video Atlas")
+![AE_Video Atlas](_images/image602.jpg "Video Atlas")
 
 ## Уборка мусора
 
 Перед экспортом надо нажать на головную композицию и сделать **File - Dependencies - Reduce Project**.
 
-![AE_Scavengery](_images/image63.png "Scavengery")
+![AE_Scavengery](_images/image603.jpg "Scavengery")
 
 ---
 
@@ -24,8 +24,8 @@
 
 Рекомендуются избегать избыточных вложений (*Precomposition*) и держать глубину вложенности проекта в пределах **1-2 композиций**.
 
-![AE_Сomposition Size](_images/image64.png "Сomposition Size")
-![AE_Сomposition Size](_images/image65.png "Сomposition Size")
+![AE_Сomposition Size](_images/image604.jpg "Сomposition Size")
+![AE_Сomposition Size](_images/image605.jpg "Сomposition Size")
 
 > Рекомендуется уменьшение общего числа композиций и количества одновременно используемых эффектов.
 
@@ -35,7 +35,7 @@
 
 Маски с кривыми могут негативно повлиять на производительность при больших разрешениях композиции, рекомендуется использовать острые углы или png. 
 
-![AE_Curves](_images/image66.png "Curves")
+![AE_Curves](_images/image606.jpg "Curves")
 
 ---
 
