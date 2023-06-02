@@ -4,7 +4,7 @@
 
 В рамках работы с выражениями через Expressions и Carrot Scripts поддерживаются следующие методы:
 
->Global:
+`Global:`
 - comp(name)
 - footage(name)
 - thisProject
@@ -14,11 +14,11 @@
 - time
 - value
 
->Other Math:
+`Other Math:`
 - degreesToRadians(degrees)
 - radiansToDegrees(radians)
 
->Comp:
+`Comp:`
 - Comp.layer(index)
 - Comp.layer(name)
 - Comp.width
@@ -26,21 +26,21 @@
 - Comp.duration
 - Comp.name
 
->Footage:
+`Footage:`
 - Footage.width
 - Footage.height
 - Footage.duration
 - Footage.pixelAspect
 - Footage.name
 
->Property:
+`Property:`
 - value
 
->Layer Sub-objects:
+`Layer Sub-objects:`
 - Layer.effect(name)
 - Layer.effect(index)
 
->Layer General:
+`Layer General:`
 - Layer.width
 - Layer.height
 - Layer.index
@@ -50,7 +50,7 @@
 - Layer.outPoint
 - Layer.startTime
 
->Layer Properties:
+`Layer Properties:`
 - Layer.anchorPoint
 - Layer.position
 - Layer.scale
@@ -58,7 +58,7 @@
 - Layer.opacity
 - Layer.name
 
->Layer 3D:
+`Layer 3D:`
 - Layer.orientation
 - Layer.rotationX
 - Layer.rotationY
@@ -72,7 +72,7 @@ Text.Font - используйте TextSource.FontSize, т.к. Carrot испол
 
 Поддержка остальных методов не гарантируется, но возможна после обращения в техническую поддержку.
 
-Для выражений используется логика и синтаксис аналогично JavaScript Expression Engine, которая отличается от ExtendScript, который может быть выставлен по умолчанию.
+Для выражений используется логика и синтаксис аналогично `JavaScript Expression Engine`, которая отличается от `ExtendScript`, который может быть выставлен по умолчанию.
 
 ![AE_ExtendScript](_images/image501.jpg "ExtendScript")
 
