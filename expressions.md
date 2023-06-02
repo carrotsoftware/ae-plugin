@@ -17,32 +17,43 @@
 ```
 
 `Other Math:`
+```
 - degreesToRadians(degrees)
 - radiansToDegrees(radians)
+```
 
 `Comp:`
+```
 - Comp.layer(index)
 - Comp.layer(name)
 - Comp.width
 - Comp.height
 - Comp.duration
 - Comp.name
+```
 
 `Footage:`
+```
 - Footage.width
 - Footage.height
 - Footage.duration
 - Footage.pixelAspect
 - Footage.name
+```
 
 `Property:`
+```
 - value
+```
 
 `Layer Sub-objects:`
+```
 - Layer.effect(name)
 - Layer.effect(index)
+```
 
 `Layer General:`
+```
 - Layer.width
 - Layer.height
 - Layer.index
@@ -51,20 +62,25 @@
 - Layer.inPoint
 - Layer.outPoint
 - Layer.startTime
+```
 
 `Layer Properties:`
+```
 - Layer.anchorPoint
 - Layer.position
 - Layer.scale
 - Layer.rotation
 - Layer.opacity
 - Layer.name
+```
 
 `Layer 3D:`
+```
 - Layer.orientation
 - Layer.rotationX
 - Layer.rotationY
 - Layer.rotationZ
+```
 
 ---
 
